@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer portal </title>
+    <style>
+        
+        dl{
+            box-sizing: border-box;
+            background-color: transparent;
+            padding: 1%;
+            border-radius: 3px;
+            box-shadow: 1px 3px 3px black;
+        }
+        dt{
+            font-weight: bolder;
+        }
+        dl:hover{
+            transform: scale(1.03);
+            
+        }
+        .nav-bar{
+            width: 100%;
+            position: relative;
+            height: 35px;
+            text-shadow: 1px 1px 3px black;
+            padding: 0.5% 0.5%;
+            border-radius: 7px;
+        }
+        #aa{
+            float: inline-start;
+            font-size: 15px;
+            color: whitesmoke;
+            width: auto;
+            border-radius: 7px;
+            text-decoration: wavy;
+            border:1px solid deeppink;
+            color:deeppink;
+            padding: 10px;
+        }
+        #aa:hover{
+            background-color: deeppink;
+            color: white;
+            cursor: pointer;
+        }
+        body
+        {
+            background: url('index.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main{
+            width: auto;
+            max-width: 800px;
+            float:inline-end;
+            margin-right: 30px ;
+            border:1px solid pink;
+            border-radius: 30px;
+            padding: 1%;
+        }
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            grid-gap: 1%;
+        }
+
+       
+        @media(max-width:480px)
+        {
+            .container
+        {
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            grid-gap: 1%;
+        }
+        }
+    </style>
+    <script>
+        function validate() {
+            window.location.href="login.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="nav-bar">
+        
+        
+        <h3 id="welcome-msg" >The Volunteer tasks</h3>
+
+    </div>
+    
+    <main>
+        <div class="welcome">
+        <h1>Be proud to help the elderly people </h1>
+        </div>
+        <div class="container">
+            
+        <dl>
+            <dt>Home Maintenance</dt>
+            <dd>
+                <ol>
+                    <li>Help with daily chores like cooking, cleaning, and laundry.
+                    </li>
+                    <li>Assistance with grocery shopping and errands.
+                    </li>
+                </ol>
+            </dd>
+        </dl>
+        <dl>
+            <dt>Companionship </dt>
+            <dd>
+                <ol>
+                    <li>Social visits for conversation and companionship.
+                    </li>
+                    <li>Accompanying the elderly to appointments or social events.
+                </li>
+                </ol>
+            </dd>
+        </dl>
+        <dl>
+                <dt>Transportation</dt>
+                <dd>
+                    <ol>
+                        <li>Assistance with transportation to medical appointments or social activities.
+                        </li>
+                        <li>Accompanying the elderly to appointments or social events.                            .
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+           <dl>
+                <dt>Technology Support
+                </dt>
+                <dd>
+                    <ol>
+                        <li>Help with using and troubleshooting electronic devices.
+                        </li>
+                        <li>- Virtual communication assistance.
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Outdoor Help                </dt>
+                <dd>
+                    <ol>
+                        <li>Gardening assistance.
+                        </li>
+                        <li>- Outdoor maintenance and upkeep.
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+           <dl>
+                <dt>Educational Support
+                </dt>
+                <dd>
+                    <ol>
+                        <li>Assisting with reading or learning new skills.
+
+                        </li>
+                        <li>- Providing educational resources.
+
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+            
+                <dl>
+                    <dt>Emergency Assistance:
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li>Establishing an emergency response plan.
+                            </li>
+                            <li>- Quick assistance in case of urgent needs.
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>To start helping the elders click here</dt>
+                    <dd><br><label id="aa" onclick="validate()">Explore tasks</label></dd>
+                </dl>
+         </div>
+    </main>
+</body>
+</html>

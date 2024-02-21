@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            table-layout: fixed;
+            border: 1px solid black;
+            width: 50%;
+        }
+        td{
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="alternate" direction="right">Hi</marquee>
+    
+    
+        
+
+        <!-- Inside 'dashboard.ejs' -->
+<%
+// Assuming result.profilePicture is an object with a buffer field
+const base64Image = result.profilePicture.buffer.toString('base64');
+%>
+
+<table border="1">
+    <tr>
+        <th>Particulars</th>
+        <th>Data</th>
+    </tr>
+    <tr>
+        <td>first Name</td>
+        <td><%= result.firstname   %></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><%= result.lastname  %></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><%= result.email   %></td>
+    </tr>
+    <tr>
+        <td>Date of Birth</td>
+        <td><%= result.dob   %></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><%= result.gender   %></td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td><img src="data:image/jpeg;base64,<%= base64Image %>" alt="Profile Picture" width="90%" height="100px">        </td>
+    </tr>
+
+</table>
+        <a href="login.html">logout</a>
+<!-- Inside 'dashboard.ejs' -->
+</html>
